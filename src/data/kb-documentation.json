@@ -1,0 +1,357 @@
+{
+  "meta": {
+    "title": "FinAI Knowledge Base",
+    "description": "Verifiziertes Finanzwissen für den deutschen Mittelstand",
+    "totalDocuments": 32,
+    "qdrantPoints": 1079,
+    "embeddingModel": "text-embedding-3-small",
+    "chunkSize": 800,
+    "updatedAt": "2026-03"
+  },
+  "categories": [
+    {
+      "id": "rechnungslegung",
+      "label": "Rechnungslegung & Standards",
+      "icon": "BookOpen",
+      "color": "blue",
+      "documents": [
+        {
+          "id": "1",
+          "title": "IFRS/IAS Standards",
+          "subtitle": "IFRS 1–19, IAS 1–41",
+          "description": "Geltende internationale Rechnungslegungsstandards, Anwendungsregeln und Key Disclosures",
+          "source": "IFRS Foundation, IAS Plus",
+          "updatedAt": "2026-01",
+          "tags": ["IFRS", "IAS", "Rechnungslegung"]
+        },
+        {
+          "id": "1E",
+          "title": "IFRS Accounting Treatments",
+          "subtitle": "Revenue Recognition, Impairment, Leases",
+          "description": "Vertiefte Verfahren: Revenue Recognition, Business Combinations, Konsolidierung, Impairment, Leases",
+          "source": "IFRS Foundation",
+          "updatedAt": "2026-01",
+          "tags": ["IFRS", "Revenue Recognition", "Konsolidierung"]
+        },
+        {
+          "id": "10",
+          "title": "IFRS S2 – Klimaoffenlegung",
+          "subtitle": "Climate-related Disclosures",
+          "description": "Klimabezogene Offenlegungspflichten, Szenarioanalyse, TCFD-Alignment",
+          "source": "IFRS Foundation",
+          "updatedAt": "2026-01",
+          "tags": ["ESG", "IFRS S2", "Klimarisiko", "TCFD"]
+        },
+        {
+          "id": "10N",
+          "title": "GHG-Bilanzierung",
+          "subtitle": "Scope 1/2/3 & Carbon-Finanzwirkung",
+          "description": "Treibhausgas-Emissionsberechnung, Carbon Pricing und finanzielle Auswirkungen auf die GuV",
+          "source": "GHG Protocol, IFRS S2",
+          "updatedAt": "2026-01",
+          "tags": ["GHG", "CO2", "Scope 1/2/3", "Carbon"]
+        },
+        {
+          "id": "12",
+          "title": "Transfer Pricing & Pillar Two",
+          "subtitle": "OECD Steuer-Compliance",
+          "description": "OECD Pillar Two (globale Mindeststeuer 15%), Verrechnungspreisgestaltung und Dokumentation",
+          "source": "OECD, EY",
+          "updatedAt": "2026-01",
+          "tags": ["Steuern", "Transfer Pricing", "Pillar Two", "OECD"]
+        }
+      ]
+    },
+    {
+      "id": "finanzanalyse",
+      "label": "Finanzanalyse & Kennzahlen",
+      "icon": "BarChart2",
+      "color": "emerald",
+      "documents": [
+        {
+          "id": "3",
+          "title": "Finanz-Kennzahlen & Formeln",
+          "subtitle": "50+ KPIs für CFO-Entscheidungen",
+          "description": "Liquiditäts-, Rentabilitäts-, Kapitalstruktur- und Working-Capital-Kennzahlen mit Formeln und Interpretation",
+          "source": "CFI, Finance Alliance",
+          "updatedAt": "2026-01",
+          "tags": ["KPIs", "Kennzahlen", "Formeln", "Liquidität", "Rentabilität"]
+        },
+        {
+          "id": "4",
+          "title": "DuPont-Analyse",
+          "subtitle": "ROE-Zerlegung & Performance",
+          "description": "3- und 5-Faktor DuPont-Modell: Nettomargen, Asset Turnover, Financial Leverage",
+          "source": "CFI",
+          "updatedAt": "2026-01",
+          "tags": ["DuPont", "ROE", "Rentabilität"]
+        },
+        {
+          "id": "5",
+          "title": "Working Capital & CCC",
+          "subtitle": "Cash Conversion Cycle",
+          "description": "DSO, DIO, DPO, CCC-Optimierung und Hebel zur Liquiditätsverbesserung",
+          "source": "Working Capital Hub",
+          "updatedAt": "2026-01",
+          "tags": ["Working Capital", "CCC", "DSO", "DPO", "DIO"]
+        },
+        {
+          "id": "11",
+          "title": "Unternehmensbewertung",
+          "subtitle": "DCF, Multiplikatoren & IDW S1",
+          "description": "DCF-Methodik, EV/EBITDA-Multiplikatoren, IDW S1-Grundsätze, WACC-Herleitung",
+          "source": "Damodaran (NYU Stern), IDW",
+          "updatedAt": "2026-01",
+          "tags": ["DCF", "Bewertung", "IDW S1", "WACC", "Multiplikatoren"]
+        },
+        {
+          "id": "2",
+          "title": "Damodaran Beta & WACC",
+          "subtitle": "Industrie-Betas & Kapitalkosten",
+          "description": "Branchen-Betas (USA-Datenbank), WACC-Berechnung, Levered/Unlevered Beta-Umrechnung",
+          "source": "NYU Stern (Prof. Damodaran)",
+          "updatedAt": "2026-01",
+          "tags": ["Beta", "WACC", "Kapitalkosten", "Damodaran"]
+        }
+      ]
+    },
+    {
+      "id": "bilanz-guv",
+      "label": "Bilanz, GuV & Cashflow",
+      "icon": "FileText",
+      "color": "violet",
+      "documents": [
+        {
+          "id": "24",
+          "title": "GuV-Analyse",
+          "subtitle": "Ergebnisrechnung & Margen",
+          "description": "Umsatz-Kostenstruktur, Deckungsbeitragsrechnung, EBITDA-Brücke, Waterfall-Analysen",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["GuV", "EBITDA", "Marge", "Deckungsbeitrag"]
+        },
+        {
+          "id": "25",
+          "title": "Bilanzanalyse",
+          "subtitle": "Vermögens- & Kapitalstruktur",
+          "description": "Anlagendeckung, Kapitalstruktur, Verbindlichkeitenstruktur, Bilanzkennzahlen nach HGB",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Bilanz", "HGB", "Kapitalstruktur", "Eigenkapital"]
+        },
+        {
+          "id": "26",
+          "title": "Cashflow-Analyse",
+          "subtitle": "Liquiditätsplanung & Forecast",
+          "description": "Indirekter/direkter Cashflow, 13-Wochen-Liquiditätsforecast, Free Cashflow, Krisenszenarien",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Cashflow", "Liquidität", "Forecast", "Free Cashflow"]
+        },
+        {
+          "id": "27",
+          "title": "Verlustquellen-Analyse",
+          "subtitle": "Problemdiagnose & Root Cause",
+          "description": "Margin-Bridge, Root-Cause-Analyse, Waterfall-Diagramme, systematisches Benchmarking",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Verlustanalyse", "Root Cause", "Margin Bridge"]
+        }
+      ]
+    },
+    {
+      "id": "benchmarks",
+      "label": "Benchmarks & Marktdaten",
+      "icon": "Target",
+      "color": "orange",
+      "documents": [
+        {
+          "id": "29",
+          "title": "Benchmark-Kennzahlen KMU",
+          "subtitle": "Normative Zielkorridore (v1.4)",
+          "description": "Verifizierte Benchmark-Korridore für Liquidität, Rentabilität, Kapitalstruktur, Working Capital und Krisenfrüherkennung – spezifisch für deutschen Mittelstand (HGB)",
+          "source": "Creditreform, KfW, Bundesbank, Bankenverband, IDW ES 16",
+          "updatedAt": "2026-03",
+          "tags": ["Benchmarks", "KMU", "Mittelstand", "Creditreform", "KfW", "Zielkorridore"]
+        },
+        {
+          "id": "30",
+          "title": "Bundesbank Sektordaten",
+          "subtitle": "Jahresabschlussstatistik nach Branche",
+          "description": "Empirische EK-Quoten, Umsatzrenditen und Kapitalstruktur nach WZ-2008-Branche; Ertragslage 2024; KfW-Mittelstandsdaten",
+          "source": "Deutsche Bundesbank, KfW Mittelstandspanel 2024",
+          "updatedAt": "2026-03",
+          "tags": ["Bundesbank", "Sektordaten", "Branchenbenchmarks", "EK-Quote", "Umsatzrendite"]
+        }
+      ]
+    },
+    {
+      "id": "krisenmanagement",
+      "label": "Krisenmanagement & Restrukturierung",
+      "icon": "AlertTriangle",
+      "color": "red",
+      "documents": [
+        {
+          "id": "17",
+          "title": "Krisenmanagement & Sanierung",
+          "subtitle": "StaRUG, Sanierungskonzept, Insolvenz",
+          "description": "Frühwarnsysteme, StaRUG-Anforderungen, Sanierungskonzept nach IDW S6, Liquiditätssicherung in der Krise",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["StaRUG", "Sanierung", "IDW S6", "Insolvenz", "Restrukturierung"]
+        },
+        {
+          "id": "28",
+          "title": "Krisenarten & Krisenstadien",
+          "subtitle": "4-Stufen-Krisenmodell",
+          "description": "Strategie-, Erfolgs-, Liquiditäts- und Insolvenzkrise; branchenspezifische Krisenmerkmale; IDW S6/S16-Klassifikation",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Krisenstadien", "IDW S6", "Frühwarnung", "Liquiditätskrise"]
+        }
+      ]
+    },
+    {
+      "id": "risiko-governance",
+      "label": "Risiko & Governance",
+      "icon": "Shield",
+      "color": "slate",
+      "documents": [
+        {
+          "id": "6",
+          "title": "COSO Internal Control",
+          "subtitle": "IKS-Framework",
+          "description": "5 Komponenten, 17 Prinzipien des COSO-Frameworks, Aufbau eines internen Kontrollsystems",
+          "source": "COSO 2013",
+          "updatedAt": "2026-01",
+          "tags": ["COSO", "IKS", "Internal Control", "Governance"]
+        },
+        {
+          "id": "6N",
+          "title": "Finance Controls Library",
+          "subtitle": "50+ konkrete Controls",
+          "description": "Detaillierte Kontrollaktivitäten für AP, AR, GL, Treasury und Payroll mit Testprozeduren",
+          "source": "COSO, Best Practices",
+          "updatedAt": "2026-01",
+          "tags": ["Controls", "AP", "AR", "Treasury", "Audit"]
+        },
+        {
+          "id": "7",
+          "title": "ISO 31000 Risikomanagement",
+          "subtitle": "Prinzipien & Framework",
+          "description": "7 ISO-31000-Prinzipien, Risiko-Framework, ISO vs. COSO Vergleich, Prozessintegration",
+          "source": "ISO 31000:2018",
+          "updatedAt": "2026-01",
+          "tags": ["ISO 31000", "Risikomanagement", "ERM"]
+        },
+        {
+          "id": "7N",
+          "title": "Risikoquantifizierung & KRIs",
+          "subtitle": "Heat Maps & Key Risk Indicators",
+          "description": "Risiko-Scoring-Modelle, Heat-Map-Erstellung, Key Risk Indicators, Finanzwirkungsquantifizierung",
+          "source": "ISO 31000, Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["KRI", "Heat Map", "Risikobewertung", "Quantifizierung"]
+        },
+        {
+          "id": "9",
+          "title": "Three Lines Model (IIA)",
+          "subtitle": "Governance-Struktur",
+          "description": "Governance-Verantwortlichkeiten, interne Revision, Zusammenspiel Board/Management/Revision",
+          "source": "IIA 2020",
+          "updatedAt": "2026-01",
+          "tags": ["Three Lines", "IIA", "Interne Revision", "Governance"]
+        },
+        {
+          "id": "8",
+          "title": "ADKAR Change Management",
+          "subtitle": "Prosci-Modell",
+          "description": "ADKAR-Framework, Change Readiness, Stakeholder-Management, Transformationsbegleitung",
+          "source": "Prosci",
+          "updatedAt": "2026-01",
+          "tags": ["Change Management", "ADKAR", "Transformation"]
+        }
+      ]
+    },
+    {
+      "id": "strategie",
+      "label": "Strategie & Management",
+      "icon": "Compass",
+      "color": "teal",
+      "documents": [
+        {
+          "id": "13",
+          "title": "Strategisches Controlling",
+          "subtitle": "BSC & OKRs",
+          "description": "Balanced Scorecard, OKR-Framework, Strategy Maps, KPI-Kaskadierung vom Ziel bis zur Maßnahme",
+          "source": "Kaplan/Norton, HBR",
+          "updatedAt": "2026-01",
+          "tags": ["BSC", "OKR", "Controlling", "Strategy Map"]
+        },
+        {
+          "id": "14",
+          "title": "Finanzstrategie",
+          "subtitle": "Dividendenpolitik & Wachstumsfinanzierung",
+          "description": "Kapitalstruktur-Optimierung, Dividendenpolitik, M&A-Finanzierung, EK vs. FK",
+          "source": "Brealey/Myers/Allen",
+          "updatedAt": "2026-01",
+          "tags": ["Kapitalstruktur", "Dividende", "M&A", "Finanzierung"]
+        },
+        {
+          "id": "15",
+          "title": "Strategisches Management",
+          "subtitle": "SWOT, Porter, Business Model Canvas",
+          "description": "SWOT-Analyse, Porter's Five Forces, Business Model Canvas, Wettbewerbspositionierung",
+          "source": "Porter, Osterwalder",
+          "updatedAt": "2026-01",
+          "tags": ["SWOT", "Porter", "BMC", "Strategie"]
+        },
+        {
+          "id": "18",
+          "title": "Operational Excellence",
+          "subtitle": "Lean, Six Sigma, KPIs",
+          "description": "Lean Management, Six Sigma, Prozessoptimierung, operative KPI-Systeme",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Lean", "Six Sigma", "Prozesse", "Operational Excellence"]
+        },
+        {
+          "id": "19",
+          "title": "Strategy & Governance",
+          "subtitle": "Corporate Governance & ESG",
+          "description": "Corporate Governance, Board-Strukturen, ESG-Integration, Compliance-Governance",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Corporate Governance", "ESG", "Compliance", "Board"]
+        },
+        {
+          "id": "20",
+          "title": "Financial Management",
+          "subtitle": "Treasury & Bankbeziehungen",
+          "description": "Treasury-Management, Cash Management, Finanzierungsstrategien, Bankbeziehungen im Mittelstand",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Treasury", "Cash Management", "Banking", "Finanzierung"]
+        },
+        {
+          "id": "21",
+          "title": "Industry & Future Resilience",
+          "subtitle": "Branchenanalyse & Disruption",
+          "description": "Branchenanalyse-Methodik, Disruptions-Management, Resilienz-Frameworks für den Mittelstand",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["Branchenanalyse", "Disruption", "Resilienz"]
+        },
+        {
+          "id": "22",
+          "title": "Advanced Topics",
+          "subtitle": "M&A, Private Equity, Strukturfinanzierung",
+          "description": "M&A-Integration, Private Equity-Strukturen, komplexe Finanzierungsarrangements",
+          "source": "FinAI Eigenentwicklung",
+          "updatedAt": "2026-01",
+          "tags": ["M&A", "Private Equity", "Strukturfinanzierung"]
+        }
+      ]
+    }
+  ]
+}
