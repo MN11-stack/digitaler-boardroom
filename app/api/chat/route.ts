@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 
+export const maxDuration = 300 // 5 Minuten – Vercel Pro/Enterprise erforderlich
+
 const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL || ''
 
 export async function POST(request: Request) {
