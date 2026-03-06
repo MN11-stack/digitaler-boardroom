@@ -62,11 +62,21 @@ export async function POST(request: Request) {
       }
     }
 
-    const n8nResponse = await fetch(N8N_WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(n8nPayload),
-    })
+    // 290s timeout — stays under maxDuration=300
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), 290_000)
+
+    let n8nResponse: Response
+    try {
+      n8nResponse = await fetch(N8N_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(n8nPayload),
+        signal: controller.signal,
+      })
+    } finally {
+      clearTimeout(timeoutId)
+    }
 
     if (!n8nResponse.ok) {
       console.error('n8n webhook error:', n8nResponse.status, n8nResponse.statusText)
